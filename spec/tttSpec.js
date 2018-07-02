@@ -11,4 +11,12 @@ describe('Game', function(){
    expect(game.scores[0]).toEqual(4);
   });
 
+  it('allows people to change turns', function(){
+    game.turn == 0;
+    game.switchturn();
+    game.switchturn();
+    expect(game.turn).toEqual(0);
+  });
+  
+
 });
