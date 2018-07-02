@@ -1,5 +1,5 @@
 function Interface(Game){
-  this.game = Game;
+  this.game = new Game;
 }
 
 Interface.prototype.switchturn = function(){
