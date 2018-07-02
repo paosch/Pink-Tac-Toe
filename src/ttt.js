@@ -23,6 +23,8 @@ Game.prototype.calculatewinner = function(){
   for (var i = 0; i < this.winNumbers.length; i++){
     if((this.winNumbers[i] & this.scores[this.turn]) == this.winNumbers[i]){
       this.gameOver = true;
+      var audio = new Audio('applause8.wav');
+      audio.play();
       return this.players[this.turn];
     }
   }
