@@ -17,6 +17,12 @@ describe('Game', function(){
     game.switchturn();
     expect(game.turn).toEqual(0);
   });
-  
+
+  it('can calculate who wins', function(){
+    game.scores[1] == 17;
+    game.scores[0] == 292;
+    game.calculatewinner();
+    expect(game.players[game.turn]).toEqual("X")
+  });
 
 });
